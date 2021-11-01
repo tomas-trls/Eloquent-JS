@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A List</title>
+  </head>
+
+  <script>
+function arrayToList(array){
+  let list = null;
+      for(let arg = array.length -1; arg >= 0; arg--){
+      list = {value:array[arg], rest: list}
+      }
+      return list;
+}
+
+function listToArray(list){
+  let newArray = [];
+
+}
+
+console.log(arrayToList([1,2,4,6]))
+  </script>
+</html>

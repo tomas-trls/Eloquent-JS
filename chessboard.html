@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChessBoard</title>
+  </head>
+
+  <script>
+let board = "";
+let width = prompt("What width ?");
+let length = prompt("What Length ?");
+
+for (y = 0; y <width; y++){
+  for (x = 0; x < length; x++){
+   if ((x+y) % 2 == 0){
+     board += " "
+   }else{
+     board += "#"
+   }
+ }
+ board += "\n";
+}
+console.log (board)
+
+  </script>
+</html>

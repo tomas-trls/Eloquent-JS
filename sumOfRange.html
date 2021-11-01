@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sum of Range</title>
+  </head>
+
+  <script>
+function range(start, end, step){
+  let array = [];
+
+   if (step == undefined || step == 0 ) {
+    for (let i = start; i<= end; i++){
+      array.push(i);
+    }
+   } else if (step > 0 ) {
+      for (let i = start; i <= end; i+= step){
+        array.push(i);
+      }
+    } else {
+      for(let i = start; i >= end; i+=step){
+        array.push(i);
+      }
+    }
+    return array;
+}
+console.log(range(1,10,2))
+
+function sum(array){
+  let total = 0;
+  for(let adding of array){
+    total += adding;
+  }
+  return total;
+}
+
+console.log(sum(range(1,10)));
+  </script>
+</html>
